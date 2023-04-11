@@ -1,0 +1,72 @@
+Chapter : 1 Inception
+//  HERE WRITE NOTE THAT YOU UNDERSTOOD FROM VIDEO ITS GOING TO FINE EVEN IF THOSE ARE NOT PERFECT BUT MUST BE WRITTEN IN SIMPLEST WAY THAT WILL
+//  HELP YOU TO UNDERSTAND BETTER.
+
+1. Is React is library or framework ?
+>> React is library why because it takes minimum efforts to setup react and and its like other npm packages you can simply us use in any project given
+   the example suppose we are building large application and in that large application for some part we would like to use React then we can simply add
+   react library our entire project is not should be react for that. On other hand thing about React Native which is framework because it is build 
+   specific for mobile app development.
+
+
+>>> Bracket Pair Colorization Toggler (Use this extension good one from brackets)
+
+
+2. What is Emmet in vs code ? (Good one)
+>> Emmet uses different abbreviations and short expressions depending on what's passed, and then dynamically converts the abbreviations into the full code. 
+   Emmet is mostly used for HTML, XML, and CSS, but it can also be used with programming languages.
+
+   How to add : 
+   Open the VS Code settings (Code → Preferences → Settings) and search for “Emmet Extensions Path”. Click “Add Item”, enter the path to the 
+   folder where you've saved the snippets. json file you've created earlier and press “OK”
+
+
+3. What is CDN ?
+>> CDN stands for Content Delivery Network. It's a network of servers located around the world that are designed to improve 
+   the speed and reliability of delivering digital content, such as web pages, images, videos, and other files, to users.
+
+   When you access a website or app, your device requests the content from the server that hosts the website or app.
+   With a CDN, instead of the server directly delivering the content to your device,the CDN acts as a middleman,
+   delivering the content from a server that is geographically closer to you.
+
+>> Why above cdn question came in mind because see this is how we are using react for alteast so below two links
+   are basically CDN links.
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+
+4. What is crossorigin ?
+ >>> crossorigin is an attribute that can be used in various HTML tags such as img, audio, video, link, and script.
+    
+    It is used to control how the browser handles requests for resources that are located on a different domain
+    or origin than the website or application that is making the request. This is known as a cross-origin request.
+
+    The value of the crossorigin attribute can be set to "anonymous" or "use-credentials" depending on
+    the requirements of the resource being requested and the security needs of the website or application 
+    making the request.
+
+    Setting crossorigin to "anonymous" indicates that the resource being requested does not require any 
+    user authentication information or cookies to be included in the request. This can be useful when 
+    requesting resources like scripts or images that are hosted by a third-party domain or CDN.
+
+    On the other hand, setting crossorigin to "use-credentials" indicates that the resource being 
+    requested requires user authentication information or cookies to be included in the request.
+    This is typically used when making requests to APIs or services that require user authentication.
+
+    >> YOU SEE IN ABOVE SCRIPT WE ARE NEITHER PASSING anonymous NOR PASSING use-credentials so is that 
+       even helpful.
+
+      By including the crossorigin attribute in the script tag without specifying a value, 
+      you're telling the browser that the requested resource (https://unpkg.com/react@18/umd/react.development.js) 
+      may be subject to cross-origin restrictions and that CORS should be enabled.
+
+     The browser will then determine the appropriate CORS settings based on the resource being 
+     requested and the security needs of your web application.
+
+
+>>>> See after add above two script we got access of react yes you heard it right no need to do create-react-app
+     no node modules or nothing just these two line are enough to access react. Its like in js we get access of
+     window object in browser console same way try to use React you will able to see all the function and properties
+     of it.
+
