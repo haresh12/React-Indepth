@@ -1,54 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React In Depth</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React In depth</title>
 </head>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <body>
-    <h1>TAG H1 WITH USING HTML</h1>
-    
-    <div id="jsRoot"></div>
-    <script>
-        let jsHeading = document.createElement('h1');
-        jsHeading.innerHTML = "TAG H1 WITH JAVASCRIPT"
-        let jsRoot = document.getElementById('jsRoot');
-        jsRoot.appendChild(jsHeading);
-    </script>
-
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <div id="reactRoot">
-    </div>
-    <script>
-       /*
-         createElement lets you create a React element. It serves as an alternative to writing JSX.
-         createElement(type, props, ...children) (See what values we need to pass)
-         in case of props we can pass any props or attributes of that element or even custom one
-       */ 
-       let reactHeading = React.createElement('h1',{
-        id : 'header',
-        custom : "Pass any value and understand you can have any key"
-       },'TAG H1 WITH REACT');
-       /*
-         When you console it you will basically see the plain javascript object
-         this is really interesting because till now in my mind it was like its
-         going to print h1 tag and all but no. Then second question comes in mind
-         how the hell its getting <h1> in browser console. (Yep will soon understand this in
-         next lecture)
-       */
-       console.log('reactHeading',reactHeading); 
-       let reactRoot = ReactDOM.createRoot(document.getElementById('reactRoot'));
-
-       /*
-         One interesting thing to learn about render method suppose in reactRoot <div> we already have some
-         h1 tags and then you are rendering this reactHeading in root question is would it append it or just
-         replace it ? Answer is react will replace it means all those h1 tags will be gone now and this new one
-         will be render in reactRoot. (ASKED IN INTERVIEW ALSO)
-       */
-       reactRoot.render(reactHeading);
-    </script>
+   <div id="root"></div>
+   <script src="App.js"></script>
 </body>
 </html>

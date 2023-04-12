@@ -70,3 +70,89 @@ Chapter : 1 Inception
      window object in browser console same way try to use React you will able to see all the function and properties
      of it.
 
+
+>>>> You see we have these two react scripts now in our code we basically have this two script tag and after that only we
+     are doing React.createElement() but what if we use this React.createElement() first and then have those script tags 
+     in that case it won't work and it will give us error React not found because it make sense you are using it first and then 
+     loading it from CDN.
+
+
+>> There are different ways you can load this scripts do you know we learned about async and defer like these are the value you
+   can pass in script i already wrote blog on that here : https://dailylearn.hashnode.dev/choosing-the-right-script-loading-strategy-async-vs-defer-in-javascript
+   both are simple understand one thing with async and defer you can decide when you want to load the script ask your self why its matter 
+   and how script get loaded if we don't pass any of then also incredible thing is that know you will have idea that why in react scripts 
+   its good that we have't passed any of then see this will make sense only when you have read that blog.
+
+
+>>> One thing i learned today that when react came into the market they came with the purpose that we need to write all these html tags in javascript
+    and thats why we have all this React.createElement() React.createRoot() and all this methods to write all these html tages inside react but 
+    just see in index.html how complicated it is to write nested code with it and thats why we have we have JSX now. For jsx we will learn more about
+    it in next lecture.
+   
+   EXAMPLE : 
+   <script>
+        let head1 = React.createElement('h2',{},'TRYING SOMETHING');
+        let head2 = React.createElement('h2',{},'BE CURIOUS');
+        let div = React.createElement('div',{
+          id : 'container'
+        },[head1,head2]) // you see how we are passing multiple tags
+        let root = ReactDOM.createRoot(document.getElementById('reactMultiRoot'))
+        root.render(div)
+    </script>
+
+
+>>> Some  of the coding related points that we need to learn
+
+ 1.     This is how we can create h1 tag with js
+
+    <div id="jsRoot"></div>
+    <script>
+        let jsHeading = document.createElement('h1');
+        jsHeading.innerHTML = "TAG H1 WITH JAVASCRIPT"
+        let jsRoot = document.getElementById('jsRoot');
+        jsRoot.appendChild(jsHeading);
+    </script>
+
+ 2.   This is how you create h1 tag with React  (MI)
+
+      <script>
+
+       /*
+         createElement lets you create a React element. It serves as an alternative to writing JSX.
+         createElement(type, props, ...children) (See what values we need to pass)
+         in case of props we can pass any props or attributes of that element or even custom one
+       */ 
+
+       let reactHeading = React.createElement('h1',{
+        id : 'header',
+        custom : "Pass any value and understand you can have any key"
+       },'TAG H1 WITH REACT');
+
+       /*
+         When you console it you will basically see the plain javascript object
+         this is really interesting because till now in my mind it was like its
+         going to print h1 tag and all but no. Then second question comes in mind
+         how the hell its getting <h1> in browser console. (Yep will soon understand this in
+         next lecture)
+       */
+
+       console.log('reactHeading',reactHeading); 
+
+       let reactRoot = ReactDOM.createRoot(document.getElementById('reactRoot'));
+
+       /*
+         One interesting thing to learn about render method suppose in reactRoot <div> we already have some
+         h1 tags and then you are rendering this reactHeading in root question is would it append it or just
+         replace it ? Answer is react will replace it means all those h1 tags will be gone now and this new one
+         will be render in reactRoot. (ASKED IN INTERVIEW ALSO)
+       */
+
+       reactRoot.render(reactHeading);
+    </script>  
+
+
+>>>>> One more interesting thing https://legacy.reactjs.org/docs/cdn-links.html see here we have different CDN link first two
+      are for development that we are using currently but other two are for production and those are minified and i had idea on
+      that but just look how small production file is compare to development its amazing i seen that first time.
+
+
