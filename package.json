@@ -2,7 +2,7 @@
   "name": "react-indepth",
   "version": "1.0.0",
   "description": "Learning React In Depth",
-  "main": "App.js",
+  
   "scripts": {
     "test": "jest"
   },

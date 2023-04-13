@@ -1,3 +1,26 @@
 Chapter : 2 Igniting The App
 
 >> First time i created package.json with npm init incredible thing else if you do create react app you have all this setup by default.
+
+>> Understood what is different between dependencies and devDependencies.
+
+>> Things that parcel does for us. (Amazing stuff)
+
+   BUNDLING (MUST REMEMBER THIS ATLEAST BECAUSE THIS IS WHY WE CALL IT BUNDLER)
+   HMR : Hot module reloading 
+   Catching
+   Code MINIFY
+   Tree shaking
+   Image optimization
+   File watcher algorithm (Because of that changes get updated as soon as we save)
+   Compression 
+   HTTPS on dev (incredible thing real man just with one command npx parcel index.html -- https)
+   Compatible with older browser (Basically browserlist library handles this but parcel use it internally)
+   Cleaning your code (Example remove all console.log in prod build)
+   Port number (I always thought this one handles by react it self but i was wrong)
+   Consistent hashing algorithm
+   ZERO CONFIG (Best part of parcel that you don't have to do any configuration or may be any minor configuration)
+
+ These are the main thing that parcel do for us so thanks from heart for such Amazing repository.
+   
+
