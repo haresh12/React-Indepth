@@ -22,5 +22,80 @@ Chapter : 2 Igniting The App
    ZERO CONFIG (Best part of parcel that you don't have to do any configuration or may be any minor configuration)
 
  These are the main thing that parcel do for us so thanks from heart for such Amazing repository.
+
+>>> In this  chapter mainly we need to learn about parcel and how Amazing it is and handles all above things for us
+
+>> What i learned about parcel :
+   Parcel is Basically a bundler which help us to bundle the thing and also make it more optimize for production we need to understand 
+   that there are hell lot of thing that is handle by bundler given the example you know when you open two projects together then you will
+   see that both will have different port and thats handle by parcel also. 
+
+>> Also i learned about parcel-catch just see how it is helping us to reduce sequential build time and also it create folder with name of dist 
+   it is basically a distribution folder where you will see all the minified File
+
+>> We need to understand that parcel does not do all this things alone but it internally use a lot dependencies it self and this is know as 
+   TRANSITIVE DEPENDENCIES. Example you to parcel handle the older browser support and you can basically choose in which browser it should work and in 
+   which it should not work and parcel do this with help of anthor library which is called browserlist. So parcel is like manager it handles a lot
+   of thing but not alone it uses different dependencies for that.
+
+>>>>> Also i learned that there are basically two types of dependencies we have in package.json
+
+     devDependencies : like parcel , jest  these are the two best example of dev dependencies why because these are the dependencies that 
+                       helps us to in developement process and it has nothing to do with end application. and in dist folder you won't be
+                       seeing any code of devDependencies.
+
+                       command : npm install -D packageName (Here -D stands for devDependencies)
+
+     dependencies :  like react , react-dom , router these are the library that best example of dependencies and in there eniter code will be in 
+                     dist minified files.
+
+                     command : npm install packageName;
+
+
+>>> One more thing about parcel is how to execute it so there are basically two commands that we can use.
+
+    npx parcel index.html (Why index.html because its entry point for our application)
+
+    npx parcel build index.html (You see this build we use that for production build creation)
+
+>>>  Also you see we have this script in index.html <script type="module" src="App.js"></script>  we need to understand why we need to pass
+     this type module in it because when we added react and react-dom libraries and then tried to import the React then it was giving us error
+     can not understand modules because if you want use modules which is es6 feature then you have to make sure you pass the script type="module"
+
+
+>> Next thing that i learned is about different between package.json and package.lock.json : 
+   So all the libraries that we install basically goes to package.json but in that we will see on thing that we have either ^(caret) sign or 
+   ~(tilde) sign so when you have caret sign it means if in library there is some minor update then it will be automatically update and in case 
+  of tilde sign if there is some major update then only it will automatically update the libraries and you know interesting thing is that in 
+  package.jsom you will still have same version number and thats where package.lock.json comes into picture it will have the exect number that we 
+  currenly using in our application and do you know not for library that we have in package.json but also for also the libraries that we have in 
+  node modules also. IN SIMPLE WORD package.lock.json WILL HAVE THE EXACT VERSION OF LIBRARY THAT YOU ARE USING CURRENTLY.
+
+
+>>>> Different between npx and npm incredible thing to understand ?
+     npm is a package manager, which is used to install and manage Node.js packages (i.e., reusable code libraries) in a project.
+     npm is typically used to install packages globally on a user's system or locally in a specific project directory.
+
+     npx is a command-line tool that comes bundled with npm (since version 5.2.0) and allows you to run packages without installing them globally or locally. 
+     npx is used to execute a package's command-line tool, such as a script or a binary file, in the context of a specific project or environment.
+     mostly whenever i have some scripts in package.json i run then using npx. 
+
+     IN SIMPLE TERM NPX IS USED TO EXECUTE THE PACKAGES OR SCRIPTS WITHOUT INSTALLING THEM GLOBALLY OR LOCALLY AND NPM IS USED TO INSTALL , UPDATE 
+     AND DELETE THE PACKAGES.
+
+
+ >>> Thats all  i have learned in this chapter summary of thing  i learned :
+     1.How to create package.json with npm init and don't skip step using -y
+     2.Parcel is beast
+     3.dependencies vs devDependencies;
+     4.npx vs npm
+     5.package.json vs package.lock.json
+     6. ^(caret) vs ~(tilde)
+     7. Understanding of browserlist 
+     8. Why we had to pass type="module" in script tag
+     9. We have run react app without CDN links
+
+
+
    
 
