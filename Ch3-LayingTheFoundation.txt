@@ -1,0 +1,148 @@
+Chapter : 3 Laying the foundation   
+
+In this section we are going to learn about jsx see when react was build they really did this jsx thing but then why they come up with jsx
+
+>>> So as we learned in last lecture how do we create h1 tag with react 
+
+   So we use something call React.createElement() where we pass three parameters like name of the tag then attributes or we can call it props 
+   also and third one content that we need to have in some in case of h1 we simply pass some text but the really issue was coming when we have
+   nested or multiple child at that time code was not that readable thats why React has to come up with JSX and it was built by Facebook Developer.
+
+
+>> Before coming up with JSX the also tried few small things to improve the code quality given the example We had to write React.createElement()
+   again and again so they come up with idea like directly importing {createElement} from React library and some developers tries to use
+   {createElement as ce} just to make more shorter but these two things did not helped much to developer and thats why finally the come up with 
+   JSX.
+
+
+ >> One thing i learned is JSX  !=========  HTML yes you heard it right JSX and HTML both are different things see JSX is HTML like syntax but not HTML
+    and this confution comes in mind because both have similer tags and all and thats why we thing both are same but just see the attributes or props
+    of the tags you will understand the different.
+
+>> So if i write <h1> HERE IT IS </> then what is will print in js file ?
+
+   >> And answer is this jsx will be first converted in  Javascript object and this object will have same value that we were getting in 
+      React.createElement() and them is will be converted into html and then rendered into dom
+
+      JSX => React.createElement() => HTML => Rendered
+
+      See overall with jsx we are doing one step extra like converting first into React.createElement() yes i know we don't do it by our self react
+      takes care of that part but at last we are doing one extra thing for sure and but still we will use JSX and reason is with JSX codes become 
+      more readable and easy to maintain and we have to write very less code.
+
+      So three main reason we need to use JSX
+      1. Code Readablity
+      2. Less code to write
+      3. Easy to understand
+
+      ALWAYS REMEMBER WE WRITE CODE FOR PEOPLE NOT FOR MACHINES YOU WORK WITH 100S OF DIFFERENT DEVELOPER SO WHEN THEY LOOK TO YOUR CODE THEY
+      SHOULD UNDERSTAND FIRST BECAUSE MACHINES CAN UNDERSTAND BINARY LANGUAGE TO SO WE CAN WRITE CODE IN THAT TO.
+
+
+>> One more interesting thing about jsx you will love it for sure
+
+
+   return(
+     <div>
+       {console.log('YES IN JSX INSIDE CURLY BRACES YOU CAN WRITE ANY JAVASCRIPT CODE ANY MEANS ANY MEANS ANY HA BAND KR HAVE)}
+     </div>
+   )
+
+>> Means now we have have our business logic and your ui in single file and thats because or REACT but then here another Amazing thing is 
+   we can write any javascript code inside jsx or kya chaiye life me.
+
+
+>> Thats not all there is one more incredible thing that JSX do for use is By default,
+   React DOM escapes any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything 
+   that's not explicitly written in your application. Everything is converted to a string before being rendered. AND IN TERMS OF 
+   SECURITY ITS BIG DEAL.  (LEARN MORE ABOUT Cross-Site Scripting (XSS))  from here https://relevant.software/blog/react-js-security-guide/
+
+
+
+>> See this all are theortical things that is good if you know but reagarding how it render it like <Header/> like this or renderHeder() like this
+   all things i already know as i work on them on daily base.
+
+
+>> One thing to understand is at the end Everything is javascript object.
+
+
+ // function renderHeder(){
+    return(
+        <div> 
+        <h1>TESTING THE WAY YOU WANT</h1>
+        </div>
+    )
+ }
+
+ >> Now as we now that we can have any js code inside JSX if we do {} this then if your basics are clear then you will also understand that we can 
+   render above function inside JSX like this
+
+    <div>
+       {renderHeder()}
+    </div>
+
+>> Other way and most common way
+
+// MAKE SURE WE START COMPONENT NAME WITH FIRST CAPITAL LETTER
+  const Header = () => {
+   return(
+        <div> 
+        <h1>TESTING THE WAY YOU WANT</h1>
+        </div>
+    )
+  }
+
+
+    <div>
+      <Header/>  // This is the most common way we will use
+    </div>
+
+ 
+>>>> Just remember this jargon word : Component Composition : Component composition is the name for passing components as props to other components, 
+    thus creating new components with other components.
+     
+>>>> SO ABOVE ARE THINGS THAT I LEARNED FROM THE VIDEO LETS WATCH ONE MORE TIME TO SEE IF WE MISSED SOMETHING ONE MORE THING THAT I LEARNED THAT 
+     WHY ITS IMPORTENT TO GIVE KEY PROPERTY WHENEVER WE HAVE ORDER OR UNORDER LIST AND OR WHENEVER WE HAVE MANY NESTED VIEW AND THATS BECAUSE OF 
+     REACT RECONSOLITION RECONSOLITION process and that i already know and in we have entire seperate  lecture for it.
+
+
+>>>>>> LETS SEE WHATS LEFT AFTER RE WATHCHING THE VIDEO
+
+
+>>> Polyfill : See there are the browsers that still does not support es6 features and thats why we have our beast library which is BEBAL which 
+    converters newer es6 code to older code so the browser can understand and this replaced older code is known as Polyfill.
+
+
+>>> When you do git init you will get git ignored by it self
+
+
+>>> TREE SHAKING : YES THIS IS THE INCREDIBLE THING DONE BY PARCEL TO MAKE WHAT SUPPOSE WE HAVE 10 DIFFERENT LIBRARY IN OUR CODE AND 
+    EACH ONE HAVE 20 DIFFERENT FUNCTIONS NOW IN YOUR PROJECT WHAT IF YOU USE ONLY ONE OR 2 FUNCTIONS FROM EACH IN THAT CASE PARCEL WILL
+    REMOVE ALL OTHER UNUSED CODE AND WHEN YOU WILL SEE IN DISTRIBUTION FOLDER YOU WANT BE SEEING THE UNUSED FUNCTIONS AND THATS KNOWN as
+    TREE SHAKING.
+
+
+>>> Make sure parcel does not remove console.log() from our project by default for that we need to use some babel library see below 
+    library and see the recommend way and for that we need to create .babelrc 
+    https://babeljs.io/docs/babel-plugin-transform-remove-console/ 
+
+
+>>> JSX TO OBJECT (REACT.CREATEELEMNT OBJECT) => BABEL CONVERT THAT JSX TO OBJECT AND OUR BROWSER CAN NOT UNDERSTAND JSX THATS WHY BABEL
+    CONVERT IT TO JS OBJECT AND THEN REACTDOM render METHOD CONVERT THAT OBJECT TO HTML AND RENDER IT IN DOM.
+
+>> We don't have one package.lock.json but we have two and second one is inside node modules. and all the TRANSITIVE DEPENDENCIES versions are
+   stored there
+
+>>> Component : Everything is component in react in simple terms its just peice of  JSX there are two types of component 
+    1. Functional component : (WILL FOCUS ONLY ONE THIS ONE AS ITS NEW WAY)
+    2. Class base component : (JUST BASIC IDEA IT MORE THEN ENOUGH)
+
+
+>>> Functional component is nothing just javascript function that return peice of JSX 
+
+
+
+
+
+
+     

@@ -2,8 +2,9 @@
   "name": "react-indepth",
   "version": "1.0.0",
   "description": "Learning React In Depth",
-  
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/haresh12/React-Indepth#readme",
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.8.3",
     "process": "^0.11.10"
   },

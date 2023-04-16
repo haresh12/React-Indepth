@@ -1,0 +1,9 @@
+// without options you can also pass options 
+// {
+//     "plugins": ["transform-remove-console"]
+// }
+
+ // with options just so we understand how we can do it
+{
+    "plugins": [["transform-remove-console", { "exclude": ["error", "warn"] }]]
+}
