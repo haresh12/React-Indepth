@@ -1,0 +1,37 @@
+Chapter : 4 talk in cheap show me the code  
+
+>>>> First few thing we need to understand that with React below things are not mandatory
+    1. Use of JSX => Not mandatory
+    2. Use of TypeScript => Not mandatory
+    3. Use of ES6 => Not mandatory
+
+
+>>> Also good thing about react is you can use it for smaller part of your app also if you don't want to use for entire project
+    suppose you have one web project now for just footer you want to use React then we can do that all we have to do is user
+    React.createRoot() and pass the id of root element. then use root.render(and pass you footer component here)
+
+
+>>>  Here in below code learn more about anchor tag new for me 
+      <a href="/"> 
+      <img alt="logo" className="logo" src="https://lh3.googleusercontent.com/p/AF1QipMf9w4RomHXrUkQKvrxtPdjp3SLadP05HDzXlH2=w1080-h608-p-no-v0"/> 
+      </a> 
+
+
+>>> React.Fragment or <> </> this empty tag both are the more good then what i thought so as we know that we are using this when ever we have multiple 
+    tags and we need to wrap then but you know when you will use <React.Fragment> </React.Fragment> and put your sibling component inside this one
+    then just do to console and see you html dom you WON'T SEE ANY EXTRA TAG.
+
+
+>>> For styling you can use inline style or className or one new way which i used in past project is style attribute like <div style={style}/>    
+
+>>>>> IF THERE IS ONE THING THAT I MUST NEED TO TAKE FROM THIS LECTURE IS SOMETHING CALLED "CONFIG DRIVEN UI MUST USED CONCEPT IN ALL BIG APPS FOR SURE"
+      TO LEARN MORE ABOUT IT JUST SEE HOW SWIGGY SEND DATA OF RES LIST : https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.0711832&lng=72.6417774&page_type=DESKTOP_WEB_LISTING
+      IN SIMPLE TERMS IT MEANS LIKE SHOWING YOUR UI BASED ON CONFIG THAT ARE SENT BY BACKEND
+
+>>>> Next thing to learn here is Virtual DOM : (If you understand this then you will ALWAYS GOING TO USE KEY)  
+
+>>>> NEW THING LEARNED TODAY THAT VIRTUAL DOM IS NOT CONCEPT OF REACT IT SOFTWARE ENGINEERING CONCEPT REACT JUST USED AS SEEN OPPORTUNITY IN IT
+
+>>> VIRTUAL DOM : WE KEEP THE REPRESNTION OF OUR DOM WITH US WHICH IS KNOW AS VIRTUAL DOM AND WE NEED VIRTUAL DOM IN REACT FOR SOMETHING CALLED
+    RECONSOLITION WHERE REACT CHECK DIFF BETWEEN TWO VIRTUAL DOM AND RENDER DATA AFTER SEEING THE DIFFERENT SEE THIS IS BIG TOPIC AND MOST 
+    ASKED INTERVIEW CONCEPT LETS WRITE BLOG ON THIS BY END OF WEEK 
