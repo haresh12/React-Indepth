@@ -1,28 +1,4 @@
-
-import React from "react";
-import ReactDOM  from "react-dom/client";
-
-
-
-  /**
-        Lets build our first app using react food delivery app.
-
-             *  Header 
-             *     Logo
-             *     Nav Items
-             *     Cart
-             *  Body
-             *    Search Bar
-             *    RestaurantList
-             *      RestaurantCard
-             *        Image
-             *        Name
-             *        Rating 
-             *        Cusines
-             *        
-    */
-
-  const restaurantList =   [
+const restaurants =   [
     {
       "type": "restaurant",
       "data": {
@@ -738,71 +714,6 @@ import ReactDOM  from "react-dom/client";
       },
       "subtype": "basic"
     },
-  ]      
+  ]    
 
-const Logo = () => (
- <a href="/"> 
- <img alt="logo" className="logo" src="https://lh3.googleusercontent.com/p/AF1QipMf9w4RomHXrUkQKvrxtPdjp3SLadP05HDzXlH2=w1080-h608-p-no-v0"/> 
- </a> 
-)    
-
-const RestaurantCard = ({restaurant}) => {
-    const {name,cuisines,avgRating,cloudinaryImageId} = restaurant
-    return(
-        <div className="resContainer">
-        <img alt="restaurant" src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${cloudinaryImageId}`} className="resLogo"/>
-        <h2>{name}</h2>
-        <h3>{cuisines.join(', ')}</h3>
-        <h4>{avgRating} Rating</h4>
-      </div>
-    )
-}
-const NavItems = () => (
-    <div className="nav-items">
-    <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Cart</li>
-    </ul>
-    </div>
-)    
-const Header = () => (
-    <div className="header">
-    <Logo/>
-    <NavItems/>
-    </div>
-)
-const Body  = () => {
-    return(
-        <div className="resListContainer">
-            {
-              restaurantList.map(restaurant => {
-                return(
-                    <RestaurantCard restaurant={restaurant?.data}/>
-                    // <RestaurantCard {...restaurant.data}/> great we to pass if you know spread operator you will understand this
-
-                )
-              })
-            }
-        </div> 
-    )
-}
-
-const Footer = () => {
-    return(
-        <h5>Footer</h5>
-    )
-}
-const AppLayout = () => {
-    return(
-        <>
-          <Header/>
-          <Body/>
-          <Footer/>
-        </>
-    )
-}
-
-let root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppLayout/>);
+  export default restaurants

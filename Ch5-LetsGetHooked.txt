@@ -1,0 +1,44 @@
+Chapter - 5 : Lets Get Hooked
+
+>> React File Structure : https://hu.reactjs.org/docs/faq-structure.html go thorugh it see even react does not have any recommended why to 
+  structure file but in this blog they are explaining some good structure that are used in ecosystem
+
+>>>> Named export and default export i have good idea on both so no need to to write more about it  but understand this that we can export default only
+     one component from file if you have multiple then rest should be named export. 
+
+     Default : export default Header;
+     Named : export {Title, SubTitle};
+
+
+>>> ONE INTERSTING THING LEARNED TODAY THAT SUPPOSE YOU HAVE 10 DIFFERENT COMPONENT TO EXPORT NOW TILL NOW WE WHERE DOING LIKE 
+    import {Title , SubTitle} for path
+    BUT THERE IS ANOTHER WAY WE CAN DO THIS
+    import * as Obj from path ; This will import all the export component that we have and then we can use like
+    <Obj.Title/> <Obj.SubTitle/> Great thing really useful    
+
+
+ >>> ONE MORE INTERSTING THING LEARNED TODAY ITS ABOUT FILE EXTENTION THAT .JS ================ .JSX WHAT I WAS THING THAT IF ANYTIME WE
+     WANT TO YOU PEICE OF JSX IN OUR FILE THEN IT SHOULD BE ALWAYS JSX BUT NO THIS IS NOT THE CASE WE CAN HAVE .JS ALSO BUT BIG QUESTION
+     COMES THAT WHY I WAS GETTING ERROR IN TIGER21 PROJECT IT MUST BE ESLINT SETTINGS.
+
+
+>>>> ONE MORE THING TO LEARN THAT REACT USES ONE WAY DATA BINDING (LEARN MORE ABOUT IT BEST EXAMPLE REACT INPUT)
+
+>>> See whenver you take const [text,setText] then this text is known as state variable. (Make sense because value
+   of this variable is depend on state)
+
+>>>> HOOKS ARE JUST NORMAL FUNCTION
+
+>>> IF WE ARE USING CONST THEN HOW WE ARE ABLE TO CHANGE VALUE OF STATE VARIABLE I HAD THIS QUESTION IN MY MIND FROM
+    LAST 50000 YEARS BUT FROM ABOVE ONE LINE WHICH IS HOOKS ARE JUST NORMAL FUNCTION I GOT MY ANSWER CLEAR LIKE 
+    ANYTHING. SEE THIS FUNCTION IT SELF RETURN ARRAY AND WHICH FIRST VALUE AS LOCAL VARIABLE AND SECOND ONE IS 
+    setSomething WHICH WE USE TO SET VALUE THAT MEANS WE ARE NOT CHANGING ANY VALUE DIRECTLY BUT WE ARE MODIFYING 
+    SOME VALUES OF THAT ARRAY.
+
+
+ >>> WHY DO WE NEED STATE ?
+
+     SEE IN SIMPLE TERM ANSWER IS TO LET REACT KNOW THAT IT NEED TO RENDER DOM AGAIN BECAUSE WHEN YOU HAVE
+     VARIABLES AND YOU UPDATE THERE VALUE LIKE XYZ=100 THEN REACT REALLY DOES NOT HAVE ANY IDEA ABOUT WHETHER
+     IT NEEDS TO UPDATE THE DOM OR NOT AND THATS WHERE STATE COMES INTO PICTURE AND WHICH HELPS REACT TO KNOW 
+     THAT DOM KO RENDER KRNE KA TIME AA GYA HAI   
