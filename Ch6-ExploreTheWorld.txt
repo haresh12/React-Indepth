@@ -1,0 +1,28 @@
+Chapter - 6 : Explore the world
+
+>>> WE NEED TO KEEP OUR UI TO SYNC WITH STATE AND THATS WHY WE NEED HOOKS. HOOKS is the way to let React DOM know what something is updated in UI
+    so it can re render it again
+
+>>>> React tracks only state variable for re rendering
+
+>>> If you have one component and you have states in that then with each states changes entire component get re render but react only updates whats changes
+    in that state try to minimize the use of states in single component and try to make component as small as you can.
+
+
+>>> understanding basic about microservices : In simple word create smaller project for each different part example one that handles notification
+    and then one that handles authentication and many others this is basically separation of concerns.
+
+>> UseEffect second hook that we are going learn : (I already i have good idea so will only write that i don't know)    
+
+   understand all hook are named import it make sense
+
+>>> There are two possible cases when your component renders first if any state changes or ALSO ANY Props changes.
+
+>>> When passed no dependency in UseEffect then i know it will be called one but NEW THING TO LEARN HERE IS IT WILL 
+    BE CALLED AFTER INITIAL RENDER
+
+
+
+>>>> ALLOW CORS : LEARN MORE ABOUT IT AND ALLOW CORS PLUGIN
+
+
