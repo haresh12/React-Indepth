@@ -1,0 +1,32 @@
+Chapter - 7 : Lets find the path
+
+>> UseEffect is called after you component is rendered. We basically need to pass two perameters into that first is callback function and second
+   one is dependency array.
+
+   >>> Now question is what if we don't pass dependency array ? 
+
+       THIS IS THE GREAT THING I LEARNED TODAY THAT IF YOU DON'T PASS EVEN EMPTY ARRAY IN UseEffect THEN IT WILL BE CALLED ON EACH RENDER DO YOU THAT 
+       IS LIKE DEFAULT BEHAVIOUR OF ANY CODE OUTSIDE OF THAT HOOK BECAUSE THAT CODE IS ALSO GET EXECUTED AFTER EACH RENDER AND THEN WE MOST OF
+       THE TIME WE PASS EMPTY ARRAY dependency THAT MEANS JUST CALLED IT ONCE. HERE IMPORTANT THING TO LEARN IS NOT PASSING EMPTY ARRAY ALSO
+       AND THEN SEE THE BEHAVIOUR.
+
+
+>>>>> REACT DOCUMENTATION SAYS THAT NEVER NEVER MEANS NEVER CREATE THE COMPONENT INSIDE COMPONENT.
+
+>>>>  NEVER EVER WRITE YOUR useState INSIDE IF ELSE CONDITION. (I DON'T KNOW WHO DOES THAT) ALSO NEVER WRITE INSIDE FOR LOOP.
+
+>>> NEVER USE HOOKS OUTSIDE OF COMPONENT (REALLY ALL THREE POINTS I NEVER DID)
+
+>>>> REACT DOES LIKE INCONSITANCY YOUR COMPONENT SHOULD ALWAYS NOW WHAT IT WILL BE DOING.
+
+
+>>>>  LEARN WHY WE NEED TO STORE IMAGES IN CDN ?
+
+>>>>> Array(10).fill("") easiest way to create array.
+.
+
+>>>>> >>>>>>>>>>    NOW MAIN PART OF THIS CHAPTER IS REACT ROUTER : (SO LETS LEARN ABOUT IS)   <<<<<<<<<<<<<<<<<<<<<<< 
+
+
+>>>>  To have the root config we need to use : 
+      import {createBrowserRouter, RouterProvider} from 'react-route-dom'

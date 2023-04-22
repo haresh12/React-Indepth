@@ -25,4 +25,50 @@ Chapter - 6 : Explore the world
 
 >>>> ALLOW CORS : LEARN MORE ABOUT IT AND ALLOW CORS PLUGIN
 
+>>> Do not ever show speaning loader use skeloton akshay explained it pretty well and than shamor loader that we show is known as 
+    shimmer effect
 
+>>   Conditional rendering and early return both are good concept but i have already idea about it 
+
+
+     Early return is like : 
+      if(true){
+        return <loader/>
+      }
+      return(
+        <div>something matters</div>
+      )
+
+   >>>>> ALWAYS ALWAYS DO OPTIONAL CHAINING BECAUSE MOST OF TIME WE MISSED THAT AND SOMTHING GET BREAKS
+
+   >>>>> ONE OF THE MOST IMPORTANT THING I LEARNED FROM THIS LECTURE IS THAT YOU CAN NOT WRITE ANY JS CODE
+         INSIDE JSX USING {} THIS CURLY  BREACKETS . WE CAN ONLY WRITE JAVASCRIPT EXPRESSION AND NOT AN 
+         STATEMENT. NOW YOUR JOB IS TO UNDERSTAND THAT WHATS DIFFERENT BETWEEN THEM.
+
+         >> JS EXPRESSION vs JS STATEMENT : 
+            In JavaScript, an expression is a piece of code that produces a value, while a statement is a complete 
+            unit of code that performs a specific action. 
+
+            An expression can be a simple value (like a number or a string), a variable, or a combination of values and operators 
+            that can be evaluated to produce a result. Examples of expressions include 2 + 3, x = 5, and myFunction().
+
+            On the other hand, a statement is a complete line of code that performs a specific action, such as declaring a variable, looping through an array, or calling a function.
+            Examples of statements include if-else, for, while, switch, return, and try-catch.
+
+            In summary, expressions produce a value while statements perform an action.
+ 
+           let x = 5 + 3; // The expression is "5 + 3"
+
+           >>> https://react.dev/learn/javascript-in-jsx-with-curly-braces (Learn about it)
+
+
+
+
+
+>>> GREAT TO KNOW THAT DIFF ALGORITHM IS WRITTEN IN REACT AND NOT IN REACTDOM BECAUSE ITS THE CORE OF THE REACT NOW THAT UPDATE YOU  
+    SEE THAT HAPPENS IN REACT DOM (JUST CHECK IN BROWSER HOW FAST IT UPDATE II )
+
+>>> WHY DO WE DO data.json() AFTER FETCH need to learn
+
+>>> microservices vs monolith
+   
