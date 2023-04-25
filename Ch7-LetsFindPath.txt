@@ -29,4 +29,23 @@ Chapter - 7 : Lets find the path
 
 
 >>>>  To have the root config we need to use : 
-      import {createBrowserRouter, RouterProvider} from 'react-route-dom'
+      import {createBrowserRouter, RouterProvider} from 'react-route-dom'  
+
+>>> useRouteError hook to show router messages
+
+>>>> Never use anchor tag it refreshes the hole page use onClick for routers.
+
+>>>>>>>>>>> SINGLE PAGE APPLICATION  <<<<<<<<<<<<<<<<<<<<<<<<
+   Most of the react APPLICATION that we build are single page APPLICATIONS because it does not render hole
+   page application again and again when routes change old html application does that and thats why <a href/>
+   anchor tag also refresh page again and again.
+
+
+ >>>>>>> THERE ARE BASICALLY TWO TYPES OF ROUTING CLIENT SIDE ROUTING AND SERVER SIDE ROUTING   
+
+ >>>> ONE AMAZING THING TO LEARN HERE IS <LINK> TAG THAT WE USE FROM react-router-dom is BASICALLY 
+      an anchor tag its just like react-router-dom do some magic and also track to make sure that 
+      pages are not getting refresh
+
+ >>>>> LETS LEARN ABOUT NESTED ROUTING : Finally i understood what is outlet WE WHERE USING THIS MANY TIME
+       IN T21C 

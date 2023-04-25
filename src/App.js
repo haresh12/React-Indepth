@@ -7,7 +7,8 @@ import Footer from "./component/Footer";
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import About from "./component/About";
 import Error from "./component/Error";
-
+import Contact from './component/Contact'
+import Cart from './component/Cart'
   /**
         Lets build our first app using react food delivery app.
 
@@ -41,11 +42,19 @@ const appRouter = createBrowserRouter([
 {
   path : '/',
   element : <AppLayout/>,
-  errorElement : Error()
+  errorElement : <Error/>
 },
 {
   path : '/about',
   element : <About/>
+},
+{
+  path : '/contact',
+  element : <Contact/>
+},
+{
+  path : '/cart',
+  element : <Cart/>
 }
 ])
 let root = ReactDOM.createRoot(document.getElementById('root'));

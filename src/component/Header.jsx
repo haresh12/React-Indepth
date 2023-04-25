@@ -1,9 +1,13 @@
+ import { Link } from "react-router-dom"
+ 
  const NavItems = () => (
     <div className="nav-items">
     <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+         <li>Home</li>
+        <Link to="/about"> <li>About</li> </Link>
+        <Link to="/contact"> <li>Contact</li> </Link>
+        <Link to="/cart"> <li>Cart</li> </Link>
+
         <li>Cart</li>
     </ul>
     </div>
