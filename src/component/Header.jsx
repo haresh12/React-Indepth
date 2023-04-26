@@ -6,10 +6,9 @@
          <li>Home</li>
         <Link to="/about"> <li>About</li> </Link>
         <Link to="/contact"> <li>Contact</li> </Link>
+        <Link to="/body"> <li>Restaurants</li> </Link>
         <Link to="/cart"> <li>Cart</li> </Link>
-
-        <li>Cart</li>
-    </ul>
+     </ul>
     </div>
 )  
 

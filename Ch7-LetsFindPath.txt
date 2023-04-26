@@ -49,3 +49,9 @@ Chapter - 7 : Lets find the path
 
  >>>>> LETS LEARN ABOUT NESTED ROUTING : Finally i understood what is outlet WE WHERE USING THIS MANY TIME
        IN T21C 
+
+>>>> CLIENT SIDE ROUTING MEANS WE HAVE ALL COMPONENT HERE ONLY RATHER THEN LOADING FROM SERVER SIDE.
+
+>>> LINK ===== <a/> tag at the end of the day
+
+>>>>>
