@@ -10,6 +10,7 @@ import Error from "./component/Error";
 import Contact from './component/Contact'
 import Cart from './component/Cart'
 import RestaurantDetails from "./component/RestaurantsDetails";
+import Profile from "./component/Profile";
   /**
         Lets build our first app using react food delivery app.
 
@@ -31,8 +32,7 @@ const AppLayout = () => {
     return(
         <>
           <Header/>
-          {"Outlet is used for children routes all the children will go inside outlet"}
-          <Outlet/>  
+           <Outlet/>  
           <Footer/>
         </>
     )
@@ -52,7 +52,13 @@ const appRouter = createBrowserRouter([
     },
     {
       path : '/about',
-      element : <About/>    
+      element : <About/> ,   
+      children : [
+        {
+          path : 'profile',
+          element : <Profile name={"Haresh"}/>
+        }
+      ]
     },
     {
       path : '/cart',
