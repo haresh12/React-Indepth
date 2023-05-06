@@ -1,0 +1,18 @@
+Chapter - 9 :  Optimize your App   (Code spitting and lazy loading and some hooks)
+
+>>>> rafce this is the short cut to create component.
+
+>>>> In this chapter we will learn about creating the custom hooks.
+
+  >>> First why even we should create custom hooks ?
+      1. Reuseability
+      2. ReadAbility
+      3. Spepartion of concern (MaintainAbility)
+      4. Easy to debug 
+      5. Easy to test
+
+
+ >>> Always start your hooks name with use.
+
+ >>>> Easy but good point that we can do named export and default export also but most of time we create separate file for each single hook so we 
+ will use export default always.

@@ -1,4 +1,4 @@
-Chapter - 7 :  Class based component
+Chapter - 8 :  Class based component
 
 >>>> FIRST THING FIRST CLASS BASED COMPONENT ARE NO LONGER USED
 
@@ -73,3 +73,53 @@ Chapter - 7 :  Class based component
 
 
   >>>>> THREE STATE : MOUNTING , UPDATING AND UNMOUNTING   : RE RENDERING FACE IS KNOW IS UPDATING 
+
+
+  >>>> SEE DON'T MAKE IT COMPLICATED FIRST THING FIRST REACT BASICALLY HAS TWO FACES REACT RENDER PHASE AND COMMIT PHASE FOR PARENT AND ALL 
+       ITS CHILD REACT COMPLETE RENDER PHASE FIRST AND THEN MOVE TO COMMIT PHASE AND WHEN WE SAY COMMIT PHASE IT FIRST UPDATE THE 
+       DOM AND THEN IF ANY API CALLS ARE THERE THEN IT WILL BE EXECUTED AND ONE MORE THING TO LEARN THAT WE CAN HAVE ASYNC IN COMPONENT DID MOUNT 
+       BUT SAME WE CAN NOT DO IT IN USEFFECT.
+
+       SO THINGS TO REMEMBER HERE IS : DIFFERENT STATES LIKE MOUNTING , UPDATING AND UNMOUNTING 
+       LIFECYLE METHODS : LIKE CONSTRUCTOR RENDER AND COMPONENTDID MOUNT
+
+
+  >>>>> NEXT WE ARE GOING TO LEARN COMPONENT DID UPDATED : (COMMIT FACE)     SIMPLY WHEN YOU HAVE SOME API CALLS IN ComponentDidMount and once 
+        that done it will trigger component re rendering again and at that time function and it will call ComponentDidUpdate function
+
+  >>>>> ComponentDidMount will be called after first render  and ComponentDidUpdate will be called after every next render. (VVVMI TO UNDERSTAND) 
+
+       >>> So till now we learned four methods : 
+           1. constructor
+           2. render 
+           3. ComponentDidMount
+           4. ComponentDidUpdate
+
+           And mostly i have clear idea on all of them
+
+   >>>>> AND MAKE SURE AT THE TIME OF UPDATE IT WILL CALL RENDER FUNCTION FIRST AND THEN IT WILL MOVE TO ComponentDidUpdate SO DON'T GET CONFUSED.
+
+>>>>> ComponentWillUnmount : (Just before your component is about to unmount this one will be called like in useEffect we have RETURN statement) 
+      IN simple term when you leave current page and go to other page at that time it will be called 
+
+
+>>>> So now we learned 5 methods : 
+     1. constructor
+     2. render
+     3. ComponentDidMount
+     4. ComponentDidUpdate
+     5. ComponentWillUnmount
+
+
+  >>>>>>>>>>> THIS IS INSTRESTING THAT NEVER COMPARE YOUR LIFECYLE WITH USEFFECT (SHOKING)   
+
+
+  >>>>> WHY EVEN WE NEED ComponentWillUnmount WHEN TO USE ? I UNDERSTAND clean up but what sort of clean up.
+
+       See react apps are single page application means whatever happen is happen on single page and thats why when you 
+       move from one page to another page there are lots of things that we need to clear.  Things like setInterVal else
+       it will always be called even after we leave the page and it will be continue to perform task even after moving to 
+       another page. MAKE SURE TO CLEAN THIS IN ComponentWillUnmount.
+
+
+>>>> YOU CAN RETURN A FUNCTION FROM  USEEFFECT AND WE MAINLY USED IT FOR ALL SORT OF CLEAN UP AGAIN BEST EXAMPLE IS SETINTERVAL AND CLEAN INTERVAL

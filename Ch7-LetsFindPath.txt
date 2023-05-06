@@ -54,4 +54,62 @@ Chapter - 7 : Lets find the path
 
 >>> LINK ===== <a/> tag at the end of the day
 
->>>>>
+>>>>>  npm and npx =>>>>>>> npx used for executable
+
+>>>> type="module" in script tag else you project won't understand es6 feature
+
+>>>>> HOT module reloading
+
+>>>>> dist folder => destribution folder
+
+>>>>> Media images takes lot of time => so parcel optimize it also
+
+>>>> browserlist (for older version)
+
+>>>> https server are possible with parcel thanks parcel --https
+
+>>> port number multiple can be handle by parcel
+
+>>>  anything that can be auto generated should be put into gitignore
+
+>>> Pollyfill => A code which is replacement of newer version of code
+
+>>>> Tree shaking : Remove unwanted code 
+
+>>>> babel / transfrom-remove-console package to remove console
+
+>>>> JSX IS NOT HTML SYNTAX IS JS BUT ITS LIKE HTLM LIKE SYNTAX IN JS
+
+>>>> everything is component is react
+
+>>>>  component composition => component inside another component
+
+
+>>>> One component can have one parent only
+
+>>>> Empty tag ======= React.Fragment
+
+
+>>>>> Config driven UI
+
+>>>>> ALWAYS ALWAYS US OPTIONAL CHANING
+
+
+>>> Destrucuring props on the fly
+
+   {...allPropertiesOfObj} ///   BEST THING THIS WILL PASS ALL PROPERTIES OF OBJECT AS PROPS  
+
+
+ >>>> Virtual Dom =>>> Reconsolication algoo for diff  
+
+ >>>>> .jsx ==== .js
+
+ >>>> {MyX,MyY} from '../Header'  (ONE WAY TO DO IT)
+
+ >>>> import * All from '../Header';  (New way to import all named export COMPONENT)
+      All.MyX 
+      All.MyY  
+
+ >>>>>> REACT USES ONE WAY DATA BINDING (LEARN MORE ABOUT THIS CONCEPT)
+
+ >>>> Input : e.target.value e.target.value event.target.value     

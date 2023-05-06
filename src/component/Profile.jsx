@@ -10,6 +10,28 @@ class Profile extends React.Component {
             count : 0
         }
     }
+   componentDidMount(){
+    // IN CLASS BASED COMPONENT THIS IS INTERSTING THING SEE BECAUSE YOU HAVE USED THIS.TIMER THIS TIMER VARIABLE WILL BE TREATED LIKE 
+    // GLOBAL VARIABLE AND BECAUSE OF THAT WE CAN USE IT IN componentWillUnmount TO CLEAR IT WHEN WE LEAVES THE PAGE
+    this.timer = setInterval(()=> {
+        console.log("Calling")
+    },1000)
+    console.log("get called after initial render")
+   } 
+
+   componentDidUpdate(prevProps,prevState){
+    // this is how you can do dependency related stuff 100% better in useEffect more readable
+    if(this.state.count !== prevState.count){
+        console.log("Call this again because state changed")
+    }
+    console.log("get called after every update but make sure render get called first")
+   }
+
+
+   componentWillUnmount(){
+     clearInterval(this.timer)
+    console.log("called once you leave the component")
+   }
 
     render() {
         // Destructure state and props only inside render

@@ -1,0 +1,26 @@
+>>>>> React is library 
+>>>   React Native is framework
+>>>> Emmet : just write boiler plate code for you
+
+>>>> heading.innerHTML 
+
+>>>>> appendChild()
+
+>>> Crossorign : HTLM attribute used for security values could be use credentials or value can be anonymous.
+
+>>> asyc and defer must understand 
+
+>>>> No create react app rather build own create react app.
+
+>>>> Bundler =>>>> Parcel, Vite , Webpack
+
+
+>>>> npm init to create package.json best thing learned
+
+>>>. Dev dependency npm install -D parcel Learn kr lena -D ka use  (npm i -D parcel)
+
+>>>> package.json and package.lock.json (lock file maintain same version of it)
+
+>>>> ^ (caret) and ~
+
+>>>> transitive dependency (dependency has some dependency and that also has some dependency)
