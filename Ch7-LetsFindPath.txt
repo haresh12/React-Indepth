@@ -113,3 +113,62 @@ Chapter - 7 : Lets find the path
  >>>>>> REACT USES ONE WAY DATA BINDING (LEARN MORE ABOUT THIS CONCEPT)
 
  >>>> Input : e.target.value e.target.value event.target.value     
+
+
+ >>>> Microservices
+
+ >>> component re render only when props or state chages no other way
+
+ >>> render first and then UseEffect get called
+
+ >>>> Early Return 
+
+ >>> Diff algorithem is written in React core library and it works same same in React Native
+
+
+ >>> rafce create component shortcut
+
+>>>> path , element , errorElement , children , useRouteError
+
+>>> React is Single Page application
+
+
+>>> Dynamic Segment =>>>> Dynamic Routing
+
+
+>>>> createBrowserRouter , RouterProvider , path , element , errorElement , children , outlet , Dynamic Segment , useParams , useRouteError
+
+>>>> / means from the root
+
+>>>>> Make sure you have clear idea about outlet
+
+>>>> class keyword for class based component  and extend React.component 
+
+>>> Class based component must have render method and it return some jsx
+
+>>> props in class based component this.props and same for state this.state
+
+>>>> Why we need to write super inside constructor and pass props
+
+>>>> this.state = {
+
+     count : 0 ; // its simple js object nothing else
+}
+
+>>> See even if we use function based component and create 100 different states then react still uses one single big object to manage state
+
+>>>> this.state to access and this.setState() to set
+
+>>>> MAKE SURE WE DON'T MUTED STATE DIRECTLY
+
+>>>>>> constructor , render , componentDidMount 
+
+>>>> render and commit phase =>>>>>> first ALWAYS render in commit phase update happen
+
+
+>>>> Finally constructor , render , componentDidMount , componentDidUpdate , ComponentWillUnmount
+
+>>>>>>> SetInterVal is best example to understand ComponentWillUnmount
+
+
+>>>> In UseEffect we can use return function for SetInterVal
